@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASsignment 4</title>
+<style>
+        /*--I chose colors close to a hockey teams jersey I like a lot*/
+    /*#4ECCFF #511D1D #D9DADA*/
+    /*Blue for header Band/little accents as well, Maroon for text
+    Grey Bakcground and white foreground*/
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    Display:grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #D9DADA;
+    padding: 10px;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #4ECCFF;
+    }
+}
+.item1 {
+background-color: #4ECCFF;
+color: white
+}
+.item2 {
+    background-color: #D9DADA;
+}
+.item3 {
+    background-color: white;
+    color: #511D1D;
+}
+.item4 {
+    background-color: #D9DADA;
+
+}
+.item5 {
+    background-color: #4ECCFF;
+    color: white
+}
+</style>
+</head>
+<body> 
+    
+    <div class="grid-container">
+        <div class="item1">A Anime Laser Home Products About us FAQ</div>
+        <div class="item2"></div>
+        <div class="item3">Main</div>  
+        <div class="item4"></div>
+        <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
